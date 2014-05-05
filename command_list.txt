@@ -1,0 +1,10 @@
+tar -xvvzf node_binaries.tar.gz
+sudo cp -r ~/node-v0.10.26-linux-x86 /usr/local/src/node-v0.10.26-linux-x86
+rm -r ~/node-v0.10.26-linux-x86
+export PATH=$PATH:/usr/local/src/node-v0.10.26-linux-x86/bin
+echo 'export PATH=$PATH:/usr/local/src/node-v0.10.26-linux-x86/bin' >> ~/.bashrc
+/usr/local/src/node-v0.10.26-linux-x86/bin/npm install ssh2
+/usr/local/src/node-v0.10.26-linux-x86/bin/node ~/nodescripts/remote_main.js
+rm node_binaries.tar.gz
+rm id_rsa.pub
+

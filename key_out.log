@@ -1,0 +1,27 @@
+spawn scp -P 22 /Users/andrejfilin/.ssh/id_rsa.pub andreyfilin@192.168.0.218:
+andreyfilin@192.168.0.218's password: spawn ssh -p22 andreyfilin@192.168.0.218
+andreyfilin@192.168.0.218's password: 
+Welcome to Ubuntu 13.10 (GNU/Linux 3.11.0-12-generic i686)
+
+ * Documentation:  https://help.ubuntu.com/
+
+283 packages can be updated.
+121 updates are security updates.
+283 packages can be updated.
+121 updates are security updates.
+
+
+Last login: Tue Apr  1 15:40:58 2014 from imac-kirill.local
+]0;andreyfilin@UbuntuAndreyF: ~andreyfilin@UbuntuAndreyF:~$ cat ~/id_rsa.pub >> ~/.ssh/authorized_keys
+]0;andreyfilin@UbuntuAndreyF: ~andreyfilin@UbuntuAndreyF:~$ spawn scp -P 22 /Users/andrejfilin/WebstormProjects/task3/node_binaries.tar.gz andreyfilin@192.168.0.218:
+node_binaries.tar.gz                            0%    0     0.0KB/s   --:-- ETAnode_binaries.tar.gz                          100% 5020KB   4.9MB/s   00:00    
+spawn scp -P 22 -r /Users/andrejfilin/WebstormProjects/task3/remote_scripts andreyfilin@192.168.0.218:~/nodescripts
+remote_auto_key_copier.sh                       0%    0     0.0KB/s   --:-- ETAremote_auto_key_copier.sh                     100% 1255     1.2KB/s   00:00    
+remote_command_list.txt                         0%    0     0.0KB/s   --:-- ETAremote_command_list.txt                       100%  307     0.3KB/s   00:00    
+remote_config_list                              0%    0     0.0KB/s   --:-- ETAremote_config_list                            100%   94     0.1KB/s   00:00    
+remote_config_parser.js                         0%    0     0.0KB/s   --:-- ETAremote_config_parser.js                       100%  770     0.8KB/s   00:00    
+remote_expect_script_creator.js                 0%    0     0.0KB/s   --:-- ETAremote_expect_script_creator.js               100% 8191     8.0KB/s   00:00    
+remote_key_copier.js                            0%    0     0.0KB/s   --:-- ETAremote_key_copier.js                          100%  771     0.8KB/s   00:00    
+remote_key_copier1.js                           0%    0     0.0KB/s   --:-- ETAremote_key_copier1.js                         100%  772     0.8KB/s   00:00    
+remote_main.js                                  0%    0     0.0KB/s   --:-- ETAremote_main.js                                100%  553     0.5KB/s   00:00    
+remote_ssh_connector2.js                        0%    0     0.0KB/s   --:-- ETAremote_ssh_connector2.js                      100% 3039     3.0KB/s   00:00    
